@@ -1,6 +1,6 @@
 Runs an [Exhibitor](https://github.com/Netflix/exhibitor)-managed [ZooKeeper](http://zookeeper.apache.org/) instance using S3 for backups and automatic node discovery.
 
-Available on the Docker Index as [mbabineau/zookeeper-exhibitor](https://index.docker.io/u/mbabineau/zookeeper-exhibitor/):
+Available on the Docker Index as [andizzle/zookeeper-exhibitor](https://index.docker.io/u/andizzle/zookeeper-exhibitor/):
 
     docker pull mbabineau/zookeeper-exhibitor
 
@@ -40,9 +40,9 @@ Once the container is up, confirm Exhibitor is running:
     $ curl -s localhost:8181/exhibitor/v1/cluster/status | python -m json.tool
     [
         {
-            "code": 3, 
-            "description": "serving", 
-            "hostname": "<host>", 
+            "code": 3,
+            "description": "serving",
+            "hostname": "<host>",
             "isLeader": true
         }
     ]
